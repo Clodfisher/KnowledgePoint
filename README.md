@@ -6,6 +6,9 @@ To work and study knowledge needed to carry out the preparation of the sample。
 
 **目录结构**   
 -*STL*-----:主要用于stl模板的样例测试    
-|-[hashmapKey64](https://github.com/Clodfisher/KnowledgePoint/tree/master/STL/hashmapKey64):用于对hashmap容器进行扩增，使其能够支持key为int64和string类型
+|-[hashmapKey64](https://github.com/Clodfisher/KnowledgePoint/tree/master/STL/hashmapKey64):用于对hashmap容器进行扩增，使其能够支持key为int64和string类型 
+-*Time*-----:主要用于关于时间的样例测试       
+|-[GetTime.cpp](https://github.com/Clodfisher/KnowledgePoint/blob/master/Time/GetTime.cpp):用于对linux中的本地时间的秒、微妙、时区取得以及转换打印操作        
+
 
 
