@@ -9,7 +9,13 @@ To work and study knowledge needed to carry out the preparation of the sample。
 |-[hashmapKey64](https://github.com/Clodfisher/KnowledgePoint/tree/master/STL/hashmapKey64):用于对hashmap容器进行扩增，使其能够支持key为int64和string类型        
  
 -*Time*-----:主要用于关于时间的样例测试       
-|-[GetTime.cpp](https://github.com/Clodfisher/KnowledgePoint/blob/master/Time/GetTime.cpp):用于对linux中的本地时间的秒、微妙、时区取得以及转换打印操作        
+|-[GetTime.cpp](https://github.com/Clodfisher/KnowledgePoint/blob/master/Time/GetTime.cpp):用于对linux中的本地时间的秒、微妙、时区取得以及转换打印操作    
+
+-*NetDevice*-----:主要用于网络设备样例测试           
+|-[ioctl.c](https://github.com/Clodfisher/KnowledgePoint/blob/master/NetDevice/ioctl.c):根据指定的网卡名，通过ioctl获取此网卡设备的IP地址、广播地址、掩码地址、MAC地址    
+|-[getifaddres.c](https://github.com/Clodfisher/KnowledgePoint/blob/master/NetDevice/getifaddres.c):通过getifaddres用于获取主机中的所有网卡名和网卡ip，以及通过网卡名取得网卡的唯一标识    
+|-[getifaddres1.c](https://github.com/Clodfisher/KnowledgePoint/blob/master/NetDevice/getifaddres1.c):采用getifaddres取得linux设备网卡中的一些信息    
+
 
 
 
