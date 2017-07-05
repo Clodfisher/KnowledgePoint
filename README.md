@@ -17,5 +17,11 @@ To work and study knowledge needed to carry out the preparation of the sample。
 |-[getifaddres1.c](https://github.com/Clodfisher/KnowledgePoint/blob/master/NetDevice/getifaddres1.c):采用getifaddres取得linux设备网卡中的一些信息    
 
 
+-*CBase*-----:主要用于测试C语言的基本语法    
+|-[PointVsArr/PointVsArr.c](https://github.com/Clodfisher/KnowledgePoint/blob/master/NetDevice/getifaddres1.c):用于测试，数组指针与数组名之间的关系     
+      
+
+
+
 
 
