@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+//test结构中i和p指针，在C的编译器中保存的是相对地址——也就是说，他们的地址是相对于struct test的实例的。
 struct test{
     int i;
     short c;
