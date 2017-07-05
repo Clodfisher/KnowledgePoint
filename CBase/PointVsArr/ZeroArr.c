@@ -1,6 +1,25 @@
 #include <stdio.h>
 
-//test结构中i和p指针，在C的编译器中保存的是相对地址——也就是说，他们的地址是相对于struct test的实例的。
+/*
+test结构中i和p指针，在C的编译器中保存的是相对地址——也就是说，他们的地址是相对于struct test的实例的。
+struct test t;
+我们用gdb跟进去，对于实例t，我们可以看到：
+# t实例中的p就是一个野指针
+(gdb) p t
+$1 = {i = 0, c = 0 '\000', d = 0 '\000', p = 0x4003e0 "1\355I\211\..."}
+
+# 输出t的地址
+(gdb) p &t
+$2 = (struct test *) 0x7fffffffe5f0
+
+#输出(t.i)的地址
+(gdb) p &(t.i)
+$3 = (char **) 0x7fffffffe5f0
+
+#输出(t.p)的地址
+(gdb) p &(t.p)
+$4 = (char **) 0x7fffffffe5f8
+*/
 struct test{
     int i;
     short c;
