@@ -63,7 +63,10 @@ int main()
     printf("pt中存储的地址用百分之p打印 = %p\n", pt);
     printf("pt中存储i的地址用百分之x打印 = %x\n", &pt->i); //因为操作符优先级，我没有写成&(pt->i)
     printf("pt中存储i的地址用百分之p打印 = %p\n", &pt->i); //
+
+    //    Cannot access memory
 //    printf("&i *i = %d\n",pt->i); //端错误(访问不存在的内存数据中的值)，访问量pt存储地址+偏移i相对大小后，内存中的数据，即为i的存储值
+
     printf("pt中存储c的地址用百分之x打印 = %x\n", &pt->c);
     printf("pt中存储c的地址用百分之p打印 = %p\n", &pt->c); //因为操作符优先级，我没有写成&(pt->i)
     printf("pt中存储p的地址用百分之x打印 = %x\n", &pt->p);
