@@ -19,6 +19,10 @@ To work and study knowledge needed to carry out the preparation of the sample。
 
 -*CBase*-----:主要用于测试C语言的基本语法    
 |-[PointVsArr/PointVsArr.c](https://github.com/Clodfisher/KnowledgePoint/tree/master/CBase/PointVsArr):用于测试，数组指针与数组名之间的关系     
+
+-*File*-----:主要用于测试对配置文件的读取操作        
+|-[IpMac](https://github.com/Clodfisher/KnowledgePoint/tree/master/File/IpMac):用于测试，通过读取配置文件，实现对静态ARP数据的读取，获得IP与MAC的对应关系    
+   
       
 
 
