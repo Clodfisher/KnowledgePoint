@@ -22,7 +22,10 @@ To work and study knowledge needed to carry out the preparation of the sample。
 
 -*File*-----:主要用于测试对配置文件的读取操作        
 |-[IpMac](https://github.com/Clodfisher/KnowledgePoint/tree/master/File/IpMac):用于测试，通过读取配置文件，实现对静态ARP数据的读取，获得IP与MAC的对应关系    
-|-[CreatDirs](https://github.com/Clodfisher/KnowledgePoint/blob/master/File/CreatDirs/CreateDirs.cpp):用于测试，创建级联的多级子目录程序           
+|-[CreatDirs](https://github.com/Clodfisher/KnowledgePoint/blob/master/File/CreatDirs/CreateDirs.cpp):用于测试，创建级联的多级子目录程序     
+
+-*ParseArg*-----:主要用于对程序参数进行解析，方便配置以及调试等               
+|-[parse.cpp](https://github.com/Clodfisher/KnowledgePoint/blob/master/ParseArg/parse.cpp):用于测试，本程序用于对参数进行解析，对于此函数的详细解释，可参照*《Linux 高级程序设计中文第三版》*杨宗德 P64                   
       
 
 
