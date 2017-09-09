@@ -27,6 +27,9 @@ To work and study knowledge needed to carry out the preparation of the sample。
 -*ParseArg*-----:主要用于对程序参数进行解析，方便配置以及调试等               
 |-[parse.cpp](https://github.com/Clodfisher/KnowledgePoint/blob/master/ParseArg/parse.cpp):用于测试，本程序用于对参数进行解析，对于此函数的详细解释，可参照*《Linux 高级程序设计中文第三版》*杨宗德 P64                   
       
+-*module*-----:主要用于产品开发中对于模块化的思考和设计                   
+|-[jmp_buf.cpp](https://github.com/Clodfisher/KnowledgePoint/blob/master/module/jmp_buf.cpp):用于测试，跨函数跳转（长跳转）：场景则常见于多进程的模块化处理系统中，用于回到特定（初始）状态。                      
+      
 
 
 
