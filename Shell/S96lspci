@@ -1,0 +1,37 @@
+#!/bin/sh
+#use for monitor network port init OK.  0 - OK; 1 - FALSE
+
+PSL5_DIR="/mnt/app/psl5"
+PORT_ALL_OK_DIR=${PSL5_DIR}"/port_all_ok.conf"
+PORT_SUM=6
+TIME=1000
+
+case "$1" in
+    start)
+         if [ ! -d $PSL5_DIR ];then
+            mkdir -p $PSL5_DIR
+        fi
+
+        PORT_NUM=`lspci | egrep -i  'network|ethernet' | wc -l`
+	if [ $PORT_NUM = $PORT_SUM ];then
+            echo 0 > $PORT_ALL_OK_DIR
+	else
+	    echo 1 > $PORT_ALL_OK_DIR
+            for n in `seq 0 $((${PORT_NUM}-1))`; do
+            	PORT_CONF="ifconfig eth$n 192.168.$(($n+1))0.101 up"
+            	$PORT_CONF
+            done
+            $PSL5_DIR/shell/beep.sh & #用于一直发出蜂鸣声，进行报警  beep -l 1000
+	fi
+        ;;
+    stop)
+        ;;
+    restart)
+        $0 stop
+        $0 start
+        ;;
+    *)
+        echo "Usage: /etc/init.d/S96lspci {start|stop|restart}"
+        ;;
+esac
+

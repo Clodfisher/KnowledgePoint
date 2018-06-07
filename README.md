@@ -29,7 +29,10 @@ To work and study knowledge needed to carry out the preparation of the sample。
 |-[parse.cpp](https://github.com/Clodfisher/KnowledgePoint/blob/master/ParseArg/parse.cpp):用于测试，本程序用于对参数进行解析，对于此函数的详细解释，可参照*《Linux 高级程序设计中文第三版》*杨宗德 P64                   
       
 -*module*-----:主要用于产品开发中对于模块化的思考和设计                   
-|-[jmp_buf.cpp](https://github.com/Clodfisher/KnowledgePoint/blob/master/module/jmp_buf.cpp):用于测试，跨函数跳转（长跳转）：场景则常见于多进程的模块化处理系统中，用于回到特定（初始）状态。                      
+|-[jmp_buf.cpp](https://github.com/Clodfisher/KnowledgePoint/blob/master/module/jmp_buf.cpp):用于测试，跨函数跳转（长跳转）：场景则常见于多进程的模块化处理系统中，用于回到特定（初始）状态。    
+
+-*Shell*-----:主要用于测试开发中一些脚本的应用            
+|-[S96lspci](https://github.com/Clodfisher/KnowledgePoint/tree/master/Shell/S96lspci):用于测试，开机启动时，是否所有的网卡都挂在正确，若没有自动进行IP设置，脚本用于放置/etc/init.d/目录下                          
       
 
 
